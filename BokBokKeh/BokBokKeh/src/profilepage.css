@@ -1,0 +1,293 @@
+
+/* The Modal (background) */
+#editprofile .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+#editprofile .modal-content {
+    top: 100px;
+    position: relative;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #ffffff;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+#editprofile .modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+#editprofile .modal-body {
+    padding: 2px 16px;
+    background-color: RGB(48,48,48);
+
+}
+
+/* .modal-footer {
+  padding: 2px 16px;
+  background-color: #ffffff;
+  color: white;
+} */
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+h2 {
+    margin-top: 0%;
+    color: rgb(240, 237, 228);
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    width: 490px;
+    height: 100%;
+    border-right: 1px solid white;
+    background-color: black;
+    z-index: 1;
+}
+
+ul {
+    padding-left: 190px;
+    font-size: 19px;
+    line-height: 65px;
+}
+
+.sidebar a[href="#"] {
+    color: white;
+    }
+
+.sidebar a[href="#"]:hover {
+    color: rgba(53, 51, 51, 0.747);
+}
+
+.leftbar {
+    position: fixed;
+    right: 0;
+    width: 490px;
+    height: 100%;
+    border-left: 1px solid white;
+    z-index:1;
+    background-color: black;
+}
+
+.leftbar input {
+    float: right;
+    height: 40px;
+    box-sizing: border-box;
+    background: white;
+    border: 1.5px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    margin-right: 3em;
+    margin-top: 0.7em;
+    position:static;
+    width: 400px;
+}
+
+::-webkit-input-placeholder{
+    color: black;
+    padding:4px;
+}
+
+::-moz-placeholder{
+    color: black;
+    padding:4px;
+}
+
+::-ms-input-placeholder{
+    color: black; 
+    padding:4px;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid white;
+}
+
+.content {
+    text-align: center;
+    margin-left: -450px;
+    margin-top: 20px;
+
+}
+
+.content a {
+    color: white;
+}
+
+.profilepic {
+    border-radius: 90px;
+    height: 140px;
+	width: 140px;
+	margin-left: -16px;
+    margin-top: 10px;
+    
+	position: absolute;
+    }
+    
+
+
+@media(max-width: 1024px){
+    .sidebar {
+        min-width: 120px;
+        max-width: 120px;
+        }
+        
+    .leftbar {
+        min-width: 120px;
+        max-width: 120px;
+        }
+        
+    .leftbar input[type="search"] {
+        display: none;
+        }
+
+    .sidebar h3 {
+        display: none;
+        }
+    
+    .sidebar span {
+        display: none;
+        }
+        
+    .sidebar .fa-home{
+        position: absolute;
+        display: block;
+        margin-left: -150px;
+        margin-top: 60px;
+        font-size: 40px;
+        padding-top: 20px;
+        }
+        
+    .sidebar .fa-user-circle{
+        position: absolute;
+        display: block;
+        margin-left: -150px;
+        margin-top: 170px;
+        font-size: 40px;
+        padding-top: 20px;
+        }
+        
+    .sidebar .fa-home:hover, .sidebar .fa-user-circle:hover {
+        color: rgba(53, 51, 51, 0.747);
+        }
+	}
+	
+.well{
+    background-color: RGB(48,48,48);
+}
+
+.displayname{
+    font-family: "Arial", Gadget, sans-serif;
+    font-size: 18;
+    font-weight: bold;
+    margin-top:0px;
+    margin-left: 60px;
+    color: white;
+
+}
+.username{
+    font-family: "Arial", Gadget, sans-serif;
+    font-size: 16;
+    color: #C0C0C0;
+    margin-top:20px;
+    margin-left: 60px;
+
+}
+
+.userusername{
+	font-family: "Arial", Gadget, sans-serif;
+    font-size: 16;
+    color: #C0C0C0;
+    margin-top:60px;
+    margin-left: 150px;
+}
+
+.userdisplayname{
+	font-family: "Arial", Gadget, sans-serif;
+    font-size: 20;
+    font-weight: bold;
+    margin-top:40px;
+    margin-left: 150px;
+
+}
+
+.posttext{
+      color:white;
+    font-family:"Arial", Gadget, sans-serif;
+    font-size: 20px;
+    margin-left: 60px;
+    border-right-width: 50px;
+    width: 400px;
+    height: auto;
+    overflow-wrap: break-word;
+ 
+}
+
+.profile {
+    border-radius: 35px;
+    margin-left: -16px;
+    margin-top: -7px;
+    width: 65px;
+    height: 65px;
+}
+
+
+.error{
+    color:red;
+}
+
+
+
+

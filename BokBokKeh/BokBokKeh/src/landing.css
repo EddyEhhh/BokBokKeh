@@ -1,0 +1,63 @@
+body, html {
+	height: 100%;
+	min-height: 100%;
+	margin: 0%;
+	padding: 0%;
+	position: relative;
+	font-family: "Arial", Gadget, sans-serif;
+}
+
+.left {
+	position: fixed;
+	left: 0;
+	height: 100%;
+}
+
+.fa-earlybirds {
+	float:right;
+	color: rgba(232, 232, 232, 1);
+	font-size: 950px;
+	margin-left: 530px;
+}
+
+.right {
+	position: fixed;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	padding:50px;
+	background-color: black;
+	z-index: 1;
+}
+
+.right .content {
+	height: 100%;
+}
+
+.right .content p {
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.right .content i {
+	color: white;
+	font-size: 85px;
+	float: left;
+	margin-left: 320px;
+	margin-top: 180px;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
